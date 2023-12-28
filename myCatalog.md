@@ -16,13 +16,13 @@ lang: 'ja'
 <section class="nendoroid">
 	<div class="container">
 		<div class="section">
-			<div>ねんどろいど</div>
+			<h4>ねんどろいど</h4>
 			<div>1-999</div>
 		</div>
 	</div>
 	<div class="container">
 		<div class="picture">
-			<div><img src="img/DSC_8440.jpeg"></div>
+			<img src="img/DSC_8440.jpeg">
 			33
 			<!-- <div>33</div> -->
 			<!-- <div>初音ミク</div> -->
@@ -56,6 +56,7 @@ lang: 'ja'
 			<div>です&nbsp;</div>
 		</div>
 	</div> -->
+	123 ABC
 </section>
 
 <!-- <div class="container">

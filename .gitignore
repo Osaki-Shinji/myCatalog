@@ -1,5 +1,6 @@
 # Created by .ignore support plugin (hsz.mobi)
 .DS_Store
+.vs-*
 myCatalog.html
 myCatalog.pdf
 img/
