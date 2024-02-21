@@ -9,22 +9,17 @@ lang: 'ja'
 	Released under the MIT license
 	https://opensource.org/licenses/mit-license.php
 -->
-<!-- # 私のねんどろいど{#h1_1 .title} -->
-<!-- ## 部{#h2_1 .part} -->
-<!-- ### 章{#h3_1 .chapter} -->
-<!-- #### 節{#h4_1 .section} -->
-<!-- ##### 項{#h5_1 .subsection} -->
-<!-- ##### 号{#h6_1 .subsubsection} -->
-<!-- # 私のねんどろいど{#h1_1 .chapter} -->
 <header class="cover">
 	<div class="container">
 		<div class="top">private collection, Nendroid catalog.</div>
 		<h1 class="title">私蔵<br/>ねんどろいど図鑑</h1>
-		<div><img src="img/DSC_3531.jpeg"></div>
-		<div class="author">Osaki Sinji 著</div>
-		<!-- <div>Cute to look, fun to play with and great to collect Nendroids!</div> -->
-		<!-- <div>ああああああああ</div> -->
-		<!-- <div>い</div>	 -->
+		<div class="cover-picture"><img src="img/DSC_3531.jpg"></div>
+		<!-- <div class="author">Osaki Shinji 著<div><imag src="img/q6lbmR5H_400x400.jpeg"></div></div> -->
+		<div class="author">
+			<div><img src="img/q6lbmR5H_400x400.jpeg"></div>
+			<div><span>fusayan@2384True2</span>著</div>
+			<!-- <div><span>Osaki Shinji</span>著</div> -->
+		</div>
 	</div>
 </header>
 <nav id="toc">
@@ -209,7 +204,6 @@ class MyCatalog {
         document.querySelectorAll(selector).forEach(elm => {
             const item = items[i];
             elm.children[0].children[0].src = `img/${item.image}`;
-           	// elm.children[1].textContent = item.caption;
            	elm.children[1].innerHTML = item.caption.replace(' ','<br/>');
 			if ('number' in item) {
 	            elm.children[2].textContent = item.number;
@@ -220,7 +214,7 @@ class MyCatalog {
 			html += '</a></li>\n';
 			i++;
         });
-		// console.log(html);
+		console.log(html);
     }
 }
 // 8桁の整数で指定された日付を"YYYY年M月D日"形式の文字列にしてセレクタでしてされた要素に設定する.
@@ -248,60 +242,54 @@ new MyCatalog(
     '.item',// セレクタ
     [
 		// ねんどろいど 
-        { number: 33, caption: '初音ミク', image: 'DSC_8440.jpeg' },
-        { number: 97, caption: '雪ミク さっぽろ雪まつり 2010冬', image: 'DSC_9449.jpeg' },
-        { number: 97, caption: '雪ミク ふわふわコートVer.', image: 'Z71_1188.jpeg' },
+        { number: 33, caption: '初音ミク', image: 'DSC_8440.jpg' },
+        { number: 97, caption: '雪ミク さっぽろ雪まつり 2010冬', image: 'DSC_9449.jpg' },
+        { number: 97, caption: '雪ミク ふわふわコートVer.', image: 'Z71_1188.jpg' },
         { number: 274, caption: '桜ミク 100mm', image: 'Z81_4840.jpg' },
         { number: 299, caption: 'ミクダヨー', image: 'DSC_7973.JPG' },
         { number: 300, caption: '初音ミク 2.0', image: 'Z81_4554.jpg' },
-        { number: 303, caption: '雪ミク いちご白無垢Ver.', image: 'DSC_4773.jpeg' },
+        { number: 303, caption: '雪ミク いちご白無垢Ver.', image: 'DSC_4773.jpg' },
         { number: 326, caption: 'レーシングミク 2013 Ver.', image: 'Z81_4569.jpg' },
         { number: 400, caption: 'カードキャプターさくら	木之本桜', image: 'Z71_3330.jpg' },
-        { number: 493, caption: '雪ミク Snow Bell Ver.', image: 'Z71_1154.jpeg' },
-        { number: 500, caption: '桜ミク Bloomed in Japan', image: 'DSC_6987.jpeg' },
-        { number: 854, caption: '初音ミク V4チャイニーズ', image: 'DSC_9015.jpeg' },
-        { number: 1039, caption: '初音ミクシンフォニー 2018-2019Ver.', image: 'DSC_9207.jpeg' },
-        { number: 1151, caption: '初音ミク マジカルミライ 2018Ver.', image: 'DSC_7887.jpeg' },
-        { number: 1250, caption: '雪ミク Snow Parade Ver.', image: 'DSC_9823.jpeg' },
-        { number: 1293, caption: 'レーシングミク 2020 Ver.', image: 'Z71_3780.JPG' },
-        { number: 1309, caption: '初音ミク V4X', image: 'Z71_9827.JPG' },
+        { number: 493, caption: '雪ミク Snow Bell Ver.', image: 'Z71_1154.jpg' },
+        { number: 500, caption: '桜ミク Bloomed in Japan', image: 'DSC_6987.jpg' },
+        { number: 854, caption: '初音ミク V4チャイニーズ', image: 'DSC_9015.jpg' },
+        { number: 1039, caption: '初音ミクシンフォニー 2018-2019Ver.', image: 'DSC_9207.jpg' },
+        { number: 1151, caption: '初音ミク マジカルミライ 2018Ver.', image: 'DSC_7887.jpg' },
+        { number: 1250, caption: '雪ミク Snow Parade Ver.', image: 'DSC_9823.jpg' },
+        { number: 1293, caption: 'レーシングミク 2020 Ver.', image: 'Z71_3780.jpg' },
+        { number: 1309, caption: '初音ミク V4X', image: 'Z71_9827.jpg' },
         { number: 1319, caption: '雪ミク 2.0', image: 'Z81_4756.jpg' },
         { number: 1339, caption: 'マジカルミライ 2019', image: 'Z71_3331.jpg' },
-        { number: 1427, caption: '初音ミク 冬木小袖Ver.', image: 'DSC_3417.jpeg' },
-        { number: 1465, caption: '初音ミク MIKU WITH YOU 2019Ver.', image: 'DSC_6285.jpeg' },
-        // { number: 1538, caption: '初音ミクシンフォニー 5th Anniversary Ver.', image: 'DSC_1066.jpeg' },
-        { number: 1538, caption: '初音ミクシンフォニー 5th Anniversary Ver.', image: 'Z71_0270.jpeg' },
-        { number: 1539, caption: '雪ミク Glowing Snow Ver.', image: 'DSC_3968.jpeg' },
+        { number: 1427, caption: '初音ミク 冬木小袖Ver.', image: 'DSC_3417.jpg' },
+        { number: 1465, caption: '初音ミク MIKU WITH YOU 2019Ver.', image: 'DSC_6285.jpg' },
+        { number: 1538, caption: '初音ミクシンフォニー 5th Anniversary Ver.', image: 'Z71_0270.jpg' },
+        { number: 1539, caption: '雪ミク Glowing Snow Ver.', image: 'DSC_3968.jpg' },
         { number: 1701, caption: '初音ミク NT', image: 'Z81_1733.jpg' },
-        // { number: 1740, caption: 'マジカルミライ 2020 Winter Festival ', image: 'Z71_4310.JPG' },
-        // { number: 1740, caption: 'マジカルミライ 2020 Winter Festival', image: 'Z71_5196.JPG' },
-        { number: 1740, caption: 'マジカルミライ 2020 Winter  Festival Ver.', image: 'Z71_5196.JPG' },
-        { number: 1777, caption: '初音ミク 招きミクVer.', image: 'Z71_6160.JPG' },
+        { number: 1740, caption: 'マジカルミライ 2020 Winter  Festival Ver.', image: 'Z71_5196.jpg' },
+        { number: 1777, caption: '初音ミク 招きミクVer.', image: 'Z71_6160.jpg' },
         { number: 1799, caption: '初音ミク MIKU EXPO 2021Ver.', image: 'Z81_1553.jpg' },
-        { number: 1800, caption: '雪ミク Grand Voyage ', image: 'Z71_4831.JPG' },
+        { number: 1800, caption: '雪ミク Grand Voyage ', image: 'Z71_4831.jpg' },
         { number: 1823, caption: '兎田ぺこら', image: 'Z30_0403.jpg' },
-        { number: 1839, caption: 'レーシングミク 2022Ver.', image: 'Z71_6488.JPG' },
-        { number: 1939, caption: '初音ミク 15th Anniversary Ver.', image: 'Z71_5474.JPG' },
-        { number: 1940, caption: 'マジカルミライ 2021Ver.', image: 'Z71_9030.JPG' },
+        { number: 1839, caption: 'レーシングミク 2022Ver.', image: 'Z71_6488.jpg' },
+        { number: 1939, caption: '初音ミク 15th Anniversary Ver.', image: 'Z71_5474.jpg' },
+        { number: 1940, caption: 'マジカルミライ 2021Ver.', image: 'Z71_9030.jpg' },
         { number: 2023, caption: '雪ミク 冬麗 Ver.', image: 'Z81_0691.jpg' },
-        // { number: 2100, caption: '初音ミク 見返り美人ミク', image: 'Z81_1713.jpg' },
         { number: 2100, caption: '初音ミク 見返り美人ミク Ver.', image: 'Z30_0406.jpg' },
         { number: 2183, caption: 'にじさんじ 壱百満天原サロメ', image: 'Z81_3430.jpg' },
         { number: 2222, caption: '初音ミク Happy 16th Birthday Ver.', image: 'Z81_3797.jpg' },
 		// ねんどろいどこ〜で
-        { caption: '初音ミク ブレス・ユー', image: 'DSC_4074.jpeg' },
+        { caption: '初音ミク ブレス・ユー', image: 'DSC_4074.jpg' },
         { caption: '初音ミク ラズベリーイズムコーデ', image: 'Z81_4777.jpg' },
         { caption: '初音ミク 赤い羽根共同募金運動', image: 'DSC_4050.jpg' },
-        { caption: '初音ミク スイートパンプキンコーデ', image: 'DSC_0896.JPG ' },
+        { caption: '初音ミク スイートパンプキンコーデ', image: 'DSC_0896.jpg' },
 		// ねんどろいどどーる
-        { caption: 'アリス ノンスケール', image: 'DSC_1354.jpeg' },
+        { caption: 'アリス ノンスケール', image: 'DSC_1354.jpg' },
         { caption: 'クイーンオブハート', image: 'Z81_4799.jpg' },
-        { caption: '桜ミク', image: 'DSC_3031.jpeg' },
-        // { caption: '桜ミク', image: 'DSC_3494.jpeg' },
-        { caption: '初音ミク', image: 'DSC_6642.jpeg' },
-        { caption: '雪ミク', image: 'DSC_2095.jpeg' },
+        { caption: '桜ミク', image: 'DSC_3494.jpg' },
+        { caption: '初音ミク', image: 'DSC_6642.jpg' },
+        { caption: '雪ミク', image: 'DSC_2095.jpg' },
         { caption: '初音ミク デートコーデVer.', image: 'Z30_0449.jpg' },
-        // { caption: '桜ミク お花見コーデVer.', image: 'noimg2.png' },
     ]
 );
 new MyDate('footer dd.publish-date .date', 0);
